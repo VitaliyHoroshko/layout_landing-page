@@ -23,6 +23,7 @@
 .contacts__grid {
   @include page-grid;
 
+
   grid-template-columns: repeat(1, 1fr);
 
   @include on-tablet {
@@ -36,7 +37,6 @@
   }
 
   .contacts__form {
-    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -48,7 +48,7 @@
     @include on-desktop {
       @include content-padding-inline;
 
-      grid-column: span 5;
+      grid-column: 2 / 5;
     }
   }
 
@@ -72,6 +72,8 @@
   margin: 0;
 
   &-number {
+    text-decoration: none;
+    cursor: pointer;
     margin-top: 8px;
     margin-bottom: 24px;
     font-family: $font-family;
@@ -91,6 +93,8 @@
   margin: 24px 0 0;
 
   &-label {
+    text-decoration: none;
+    cursor: pointer;
     font-family: $font-family;
     font-weight: 500;
     font-size: 16px;
@@ -114,6 +118,8 @@
   color: #fff;
 
   &-label {
+    text-decoration: none;
+    cursor: pointer;
     font-family: $font-family;
     font-weight: 500;
     font-size: 16px;
@@ -226,6 +232,7 @@
   height: 56px;
   text-align: center;
   margin: 40px auto 0;
+  transition-duration: 300ms;
 
   @include on-tablet {
     width: 392px;
@@ -243,6 +250,14 @@
     line-height: 56px;
     color: #1d1d1d;
   }
+}
+
+.details__button:hover {
+  box-shadow: 1px 4px 16px 0 #e8e8f066;
+}
+
+.details__button:active {
+  box-shadow: 1px 4px 16px 0 #e8e8f0a3;
 }
 
 .the-details__picture-wrapper {
@@ -340,9 +355,10 @@
   width: 278px;
   height: 48px;
   background-color: #f8f8fa;
-  border-radius: 16px;
+  border-radius: 40px;
   line-height: 48px;
   color: #7e7e83;
+  border: none;
 
   @include on-tablet {
     width: 288px;
@@ -366,6 +382,7 @@
 }
 
 .contact-us__input--email {
+  border: none;
   line-height: 48px;
   resize: none;
   padding-left: 16px;
@@ -375,7 +392,7 @@
   width: 278px;
   height: 48px;
   background-color: #f8f8fa;
-  border-radius: 16px;
+  border-radius: 40px;
 
   @include on-tablet {
     width: 288px;
@@ -399,6 +416,7 @@
 }
 
 .contact-us__input--message {
+  border: none;
   outline: none;
   box-shadow: none;
   resize: none;
@@ -436,6 +454,7 @@
 }
 
 .contact-us__button {
+  border: none;
   transition-duration: 300ms;
   background-color: #fff;
   border-radius: 40px;

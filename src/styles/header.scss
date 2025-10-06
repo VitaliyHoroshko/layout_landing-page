@@ -54,7 +54,6 @@
 }
 
 .menu__top-image {
-  @include content-padding-inline;
 
   width: 130px;
   height: 38px;
@@ -94,7 +93,7 @@
 
 .icon__phone::after {
   position: absolute;
-  content: '+ 48-692-833-259';
+  content: '+1 234 5555-55-55';
   font-family: $font-family;
   transition-duration: 300ms;
   color: #fff;
