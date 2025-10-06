@@ -54,7 +54,6 @@
 .menu__phone-number {
   position: relative;
   font-family: $font-family;
-  display: flex;
   text-decoration: none;
   text-transform: uppercase;
   color: #1d1d1d;
@@ -142,7 +141,6 @@
   position: relative;
   text-decoration: none;
   color: #1d1d1d;
-  display: block;
   padding: 24px 0;
   display: block;
   width: fit-content;
