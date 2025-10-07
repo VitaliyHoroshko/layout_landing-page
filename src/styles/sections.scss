@@ -48,7 +48,7 @@
     @include on-desktop {
       @include content-padding-inline;
 
-      grid-column: 2 / 5;
+      grid-column: span 6;
     }
   }
 
@@ -228,7 +228,7 @@
 .details__button {
   background-color: #fff;
   border-radius: 40px;
-  width: 278px;
+  width: 310px;
   height: 56px;
   text-align: center;
   margin: 40px auto 0;
@@ -351,7 +351,7 @@
   padding-left: 16px;
   outline: none;
   box-shadow: none;
-  margin: 0 20px 16px 22px;
+  margin: 0 20px 0 22px;
   width: 278px;
   height: 48px;
   background-color: #f8f8fa;
@@ -388,7 +388,7 @@
   padding-left: 16px;
   outline: none;
   box-shadow: none;
-  margin: 0 20px 16px 22px;
+  margin: 0 20px 0 22px;
   width: 278px;
   height: 48px;
   background-color: #f8f8fa;
@@ -437,7 +437,7 @@
   }
 
   @include on-desktop {
-    width: 411px;
+    width: 400px;
   }
 
   &::placeholder {
@@ -458,21 +458,21 @@
   transition-duration: 300ms;
   background-color: #fff;
   border-radius: 40px;
-  width: 278px;
+  width: 310px;
   height: 56px;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 16px;
   margin-bottom: 48px;
   margin-inline: auto;
 
   @include on-tablet {
     margin-bottom: 120px;
-    width: 288px;
+    width: 320px;
   }
 
   @include on-desktop {
     margin-bottom: 164px;
-    width: 411px;
+    width: 432px;
   }
 
   &--text {
